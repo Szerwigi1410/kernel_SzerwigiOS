@@ -8,7 +8,7 @@ unsigned char keymap[128] = {
     'a','s','d','f','g','h','j','k','l',';','\'','`', 0, '\\',
     'z','x','c','v','b','n','m',',','.','/', 0, '*', 0, ' ',
     0,  // F1
-    // (You can fill in more keys later)
+    // (I will fill in more keys later)
 };
 
 void keyboard_handler() {
