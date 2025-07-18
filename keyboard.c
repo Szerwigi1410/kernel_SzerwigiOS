@@ -25,5 +25,5 @@ void keyboard_handler() {
 
 void init_keyboard() {
     // IRQ1 = keyboard = interrupt 33 (0x21)
-    // You’ll hook this in your IDT setup, or call from kmain
+    //someone will hook this in your IDT setup, or call from kmain
 }
