@@ -29,3 +29,11 @@ void tty_write(const char* str) {
         tty_putchar(str[i]);
     }
 }
+
+void terminal_initialize(void) {
+    for (int i = 0; i < ROWS * COLS; i++) {
+        video_memory[i * 2] = ' ';
+        video_memory[i * 2 + 1] = 0x07;
+    }
+    cursor_pos = 0;
+}

@@ -18,7 +18,7 @@ void keyboard_handler() {
     if (scancode < 128) {
         char ch = keymap[scancode];
         if (ch) {
-            terminal_putchar(ch);
+            tty_putchar(ch);
         }
     }
 }
