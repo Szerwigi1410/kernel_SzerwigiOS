@@ -9,10 +9,10 @@ OBJ = $(SRC:.c=.o)
 all: kernel.elf
 
 %.o: %.c
-    $(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 kernel.elf: $(OBJ)
-    $(LD) $(LDFLAGS) $(OBJ) -o kernel.elf
+	$(LD) $(LDFLAGS) $(OBJ) -o kernel.elf
 
 clean:
-    del *.o *.elf
+	del *.o *.elf
